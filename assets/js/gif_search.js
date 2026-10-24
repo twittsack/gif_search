@@ -38,6 +38,10 @@ function renderGIFs(gifs) {
 }
 
 async function fetchGIFs(searchText) {
+    if (searchText === undefined) {
+        return;
+    }
+
     let giphy_arr = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=${akey}&q=${searchText}&limit=10`);
     let response = await giphy_arr.json();
     gifs = response.data;
