@@ -1,13 +1,7 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
     font-size: 16px;
     min-width: 300px;
-}
-
-p {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 0px;
 }
 
 pre {
@@ -29,6 +23,12 @@ button {
     padding: 10px 15px;
     font-size: 16px;
     cursor: pointer;
+}
+
+.search-area p {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 0px;
 }
 
 /* CSS Grid for results */
