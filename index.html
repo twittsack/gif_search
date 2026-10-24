@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search GIPHY</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <h2>Search GIPHY</h2>
+
+    <div class="search-area">
+        <form action="#" method="get" class="js-search-form">
+        <label>
+            <p>Enter descriptive word(s) to search GIPHY:</p>
+            <pre>Example: funny cat or funny+cat for multi-word searches</pre>
+            <input type="text" name="search-name" />
+        </label>
+        <button type="submit">Search</button>
+    </form>
+    </div>
+    <div id="searchParam" class="search-param-container js-search-param-container"></div>
+    <hr>
+
+    <div id="results" class="results-container js-results-container"></div>
+    <script src="./assets/js/gif_search.js"></script>
+    
+</body>
+</html>
