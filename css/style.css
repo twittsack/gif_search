@@ -6,19 +6,18 @@
 }
 
 body {
-    margin: 10px;
+    margin: 2px;
     min-width: 300px;
-    padding: 10px;
 }
 
 /* Header area */
 .page-header {
-    height: 30px;
+    height: 40px;
 }
 
 .navbar {
     width: 100%;
-    padding: 8px 70px;
+    padding: 8px 2px;
     background: #fff;
     color: black;
     display: flex;
