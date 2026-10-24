@@ -9,6 +9,15 @@ the GIF, are open in a new tab, save, copy and create a QR code options.
 
 Webpage created using HTML, CSS, and Javascript.
 
+**Links**
+https://twittsack.github.io/gif_search/
+https://github.com/twittsack/gif_search
+
+**Future Development:**
+ - Include link to download the GIFs
+ - Include additional links to download various sizes oddf the GIFs
+ - Create a webpage to contain a history of the searches and the counts of the GIFs returned per search.
+
  **User Stories:**
 
  As a user, I want to be able to to type in text to find matching GIFs from GIPHY.
@@ -21,7 +30,3 @@ Webpage created using HTML, CSS, and Javascript.
  As a developer of the webpage, I want to parse the response from the api.
  As a developer of the webpage, I want to display the response GIFs in a CSS grid on the webpage.
 
- **Future Development:**
- - Include link to download the GIFs
- - Include additional links to download various sizes oddf the GIFs
- - Create a webpage to contain a history of the searches and the counts of the GIFs returned per search.
