@@ -48,6 +48,7 @@ function formSubmitted(event) {
     event.preventDefault();
     let searchText = (searchInput.value);
     fetchGIFs(searchText);
+    searchInput.value = '';
 }
 
 form.addEventListener('submit', formSubmitted);
