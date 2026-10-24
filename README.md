@@ -15,7 +15,7 @@ Webpage created using HTML, CSS, and Javascript.
 
 **Future Development:**
  - Include link to download the GIFs
- - Include additional links to download various sizes oddf the GIFs
+ - Include additional links to download various sizes of the GIFs
  - Create a webpage to contain a history of the searches and the counts of the GIFs returned per search.
 
  **User Stories:**
