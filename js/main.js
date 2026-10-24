@@ -39,7 +39,7 @@ function renderGIFs(gifs) {
 
 async function fetchGIFs(searchText) {
      if (searchText !== undefined) {
-        paramContainer.innerHTML = `Searching GIPHY for the following parameter(s): ${searchText}`;
+        paramContainer.innerHTML = `Searched GIPHY for the following parameter(s): ${searchText}`;
     }
 
     if (searchText === undefined) {
@@ -60,4 +60,17 @@ function formSubmitted(event) {
 }
 
 form.addEventListener('submit', formSubmitted);
+
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('#headerNavigation .nav-link');
+    const navbarCollapse = document.getElementById('headerNavigation');
+    
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+        bsCollapse.hide();
+      });
+    });
+  });
+
 loadGIFs();
