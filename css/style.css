@@ -1,34 +1,79 @@
-body {
+*{
+    margin: 0;
+    padding: 0;
     font-family: "Barlow Condensed", sans-serif;
     font-size: 16px;
+}
+
+body {
+    margin: 10px;
     min-width: 300px;
+    padding: 10px;
 }
 
-pre {
-    font-size: smaller;
+/* Header area */
+.page-header {
+    height: 30px;
 }
 
+.navbar {
+    width: 100%;
+    padding: 8px 70px;
+    background: #fff;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+.nav-link {
+    display: flex;
+    gap: 1px;
+    list-style: none;
+}
+
+
+.nav-link li a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1px;
+}
+
+/* main area */
  /* Search bar layout */
 .search-area {
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    gap: 8px;
 }
 
 input[type="text"] {
-    padding: 10px;
-    width: 250px;
+    padding: 5px;
     font-size: 16px;
+    flex-grow: 1;
+    margin-right: 10px;
+
 }
 
 button {
-    padding: 10px 15px;
+    padding: 5px;
     font-size: 16px;
     cursor: pointer;
-}
+    white-space: nowrap;
 
-.search-area p {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 0px;
 }
 
 /* CSS Grid for results */
@@ -49,4 +94,39 @@ button {
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* media queries */
+@media screen and (min-width: 320px) {
+    .results-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    input[type="text"] {
+        width: 240px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .results-container {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+
+    input[type="text"] {
+        width: 220px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .results-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    input[type="text"] {
+        width: 250px;
+    }
+
+    .page-header {
+        height: 45px;
+    }
 }
