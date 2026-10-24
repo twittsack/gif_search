@@ -38,6 +38,10 @@ function renderGIFs(gifs) {
 }
 
 async function fetchGIFs(searchText) {
+     if (searchText !== undefined) {
+        paramContainer.innerHTML = `Searching GIPHY for the following parameter(s): ${searchText}`;
+    }
+
     if (searchText === undefined) {
         return;
     }
